@@ -173,7 +173,6 @@ margin-bottom: 2em;
   font-family: var(--font-family-fraunces);
   font-weight: 800;
   color: var(--dark-desat-blue);
-
 }
  .learn1::before{
  content: "";
