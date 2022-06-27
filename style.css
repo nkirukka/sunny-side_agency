@@ -47,7 +47,7 @@ header{
   margin-top: 1.3em;
 }
 nav {
-  position: sticky;
+  position: relative;
   top: 0;
   display: flex;
   margin: 10px 20px;
@@ -58,12 +58,11 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
-  top: 4em;
-  width: 320px;
-  height: 250px;
-  padding: 8em 0;
-  margin: 0 -8px;
+  position:fixed;
+  top: 5em;
+  width: 90%;
+  padding: 2em 3em;
+  margin: auto;
   list-style: none;
   background-color: var(--white); 
   text-align: center;
@@ -75,34 +74,35 @@ nav ul::before {
   height: 0;
   border-bottom: 30px solid var(--white);
   border-left: 30px solid transparent;
-  position: absolute;
-  left: 90.5%;
-  top: -15px;
+  position: fixed;
+  left: 87.4%;
+  top: 3.5em;
 }
-nav a {
+nav a:not(last-child) {
   text-decoration: none;
-  color: var(--dark-grayish-blue);
+  color: var(--grayish-blue);
+  transition: background-color .5s;
 }
-nav li{
-background: none;
-transition: .6s;
-}
-nav li:not(last-child):hover{
+nav li a:not(last-child):hover{
   background-color: var(--yellow);
   color: var(--v-dark-grayish-blue);
+  padding: 10px 20px;
   border-radius: 30px;
   margin: 0 50px;
+}
+nav li {
+  padding-bottom: .9em;
 }
 #contact {
   text-transform: uppercase;
   font-family: var(--font-family-fraunces);
   background: var(--yellow);
-  color: var(--v-dark-grayish-blue);
-  margin: 15px 50px 10px;
+  color: var(--dark-desat-blue);
+  padding: 10px 20px;
   border-radius: 2em;
   transition:  all .5s;
 }
-#contact:hover{
+ li #contact:hover{
 margin: 15px 0 10px;
 background: none;
 }
@@ -111,8 +111,7 @@ background: none;
   cursor: pointer;
 }
 .close-icon{
-  width: 20px;
-  height: 20px;
+  transform: scale(1.2);
   filter: invert();
   cursor: pointer;
  display: none;
@@ -203,8 +202,8 @@ margin-bottom: 2em;
 .move-up{
   position: relative;
   top: -12em;
-  margin: 0 0em -6.5em;
-  line-height: 1.6em;
+  margin: 0 1em -6.5em;
+  line-height: 1.3em;
 }
 .move-up h3{
   text-transform: capitalize;
@@ -256,13 +255,11 @@ margin: 1.9em 0 0;
 }
 .gallery{
   display: grid;
-  grid-template-columns: 1fr 1fr;
- margin-bottom: -.2em;
- 
+  grid-template-columns: auto auto;
 }
 footer{
   padding: 5em 0;
-  margin-bottom: 2em;
+  margin: -.9em 0 2em;
   background-color: hsl(168, 57%, 72%);
   color: var(--dark-desat-cyan);
   font-family: var(--font-family-barlow);
@@ -286,19 +283,18 @@ footer .social-media{
   justify-content: space-around;
   margin: 0 4em;
 }
-
-.attribution {
-  background-color:hsl(199, 70%, 53%);
+.attribution{
+  padding: .7em 0;
+  background-color:hsl(170, 38%, 65%);
   color: var(--v-dark-desat-blue);
-  font-size: 11px;
+}
+.attribution > div {
+  font-size: .1rem;
   text-align: center;
- 
-  padding: 1em 7em;
 }
 .attribution a {
   text-decoration: none;
   font-size: .5rem;
   font-family: var(--font-family-fraunces);
-  color: rgb(196, 37, 37);
-  
+  color: #ad254e;
 }
