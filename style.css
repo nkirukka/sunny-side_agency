@@ -30,7 +30,6 @@
   text-align: center;
 }
 body {
-  margin-right: 2em;
   overflow-x: hidden;
   font-family: var(--font-family-barlow);
 }
