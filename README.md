@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://nkirukka.github.io/sunny-side_agency/)
+- Solution URL: [FrontEnd Mentor](https://www.frontendmentor.io/solutions/created-using-html5-css-flexbox-css-grid-mobile-first-approach-4piTptvO4Y)
+- Live Site URL: [Github Pages](https://nkirukka.github.io/sunny-side_agency/)
 
 ## My process
 
@@ -98,4 +98,3 @@ Media query is a feature I plan to continue to enlighten myself on as I find mys
 
 - LinkedIn - [Nkiruka Ebele](linkedin.com/in/nkiruka-ebele-8b03bb17a)
 - Frontend Mentor - [@nkirukka](https://www.frontendmentor.io/profile/nkirukka)
-- Github - [@nkirukka](https://github.com/nkirukka)
