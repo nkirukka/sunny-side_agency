@@ -1,5 +1,5 @@
 /* Google font Fraunces  & Barlow */
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 
 :root {
@@ -165,7 +165,7 @@ transform: scale(1.6);
 .center-section h2 {
   font-family: var(--font-family-fraunces);
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 0.7em;
 }
 .center-section p {
@@ -367,9 +367,10 @@ transition: .2s;
     padding-right: 1em;
   }
   nav #contact {
-    background: hsl(194, 100%, 65%);
-    color: var(--white);
+    background: var(--white);
+    color: var(--v-dark-desat-blue);
     padding-left: -1em;
+    opacity: 1;
   }
   nav ul::before {
     display: none;
@@ -426,33 +427,37 @@ transition: .2s;
     text-align: left;
   }
   .center-section {
-  
-    margin: 8em 3em 0;
+    margin: 4em 3em;
   }
-  .transform img {
+  .transform img,
+  .stand-out img  {
     width: 50vw;
     height: 64.7vh;
     object-fit: cover;
+  }
+  .transform img{
+    margin-right: -0.9em;
+  }
+  .stand-out img{
+    height: 69vh;
   }
   .stand-out {
     display: flex;
     margin-top: 0;
   }
- .stand-out img {
-    width: 50vw;
-    height: 69vh;
-    object-fit: cover;
-  }
   .design-photography{
     display: flex;
     flex-direction: row;
-    margin-top: -2em;
+  }
+  .design-photography p{
+    padding: 0 4em;
   }
   .blue > img,
   .teal > img{
     width: 50vw;
     height: 60vh;
     object-fit: cover;
+      min-height: 80vh;
   }
   .blue{
     margin-top: 0;
@@ -492,7 +497,7 @@ margin-top: 7.99em;
   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5em;
+    padding: 9em 5em 5em;
   }
   .testimonials h4{
     flex: 0 0 100%;
@@ -515,21 +520,39 @@ margin-top: 7.99em;
  .transform{
   margin-top: 15.6em;
  }
+ .center-section{
+  margin: 6em 3em 3em;
+ }
 }
 @media only screen and (min-width: 1500px) {
   .img-header-desktop{
-    max-height: 770px;
-  }
-  .transform{
-    margin-top: 26.7em;
+    
+    max-height: 970px;
   }
   .creatives{
-    top: 11.5em;
+    top: 12.9em;
   }
   .creatives .arrow-down{
     transform: scale(1);
   }
   .creatives h1{
-    font-size: 3em;
+    font-size: 4em;
+  }
+  .transform{
+    margin-top: 33.33em;
+  }
+  .transform img,
+  .stand-out img{
+    height: 82vh;
+  }
+  .center-section{
+    padding: 0em 6em;
+    margin-top:9em;
+  }
+  .center-section > h2{
+    font-size: 2.7em;
+  }
+  .design-photography p{
+    padding: 0 10em;
   }
 }
